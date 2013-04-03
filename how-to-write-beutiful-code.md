@@ -30,5 +30,21 @@ In difference to the typical answer of _"The best would be a balance between the
 In my opinion, the best approach to code documentation includes notes on:
 
 - What a function or set of code does.
-- Notes on something in the code, like deprecation, legacy, or needed changes, suggestions
-- Step by step explanation of a complicated process, or code that is gibberish(which is what this book hopes to prevent!)
+- Usage for a set of code or function.
+- Notes on something in the code, like deprecation, legacy, needed changes, or suggestions.
+- Step by step explanation of a complicated process, or code that is gibberish(which is what this book hopes to prevent!).
+
+Example for a function to add a new var to an array in C++:
+
+`// Main pointer class -- pointer.c is current pointer, and pointer.p[*] are the pointers in it's array
+class pointer {
+  int p[0] = 0;
+  int c = 0;
+
+  // Simply appends a new int to pointer.p
+  void addNewPointer() {
+    pointer.p.append(0);
+  }
+}`
+
+If you're reading this then I forgot to update this.
