@@ -18,7 +18,7 @@ to keep my code clean, simple, and almost all of my coding design has been inspi
 I use vim, I am an avide vim user, and I use markdown + raw text file to make the majority of my rich
 text documents. Though, for public school computer purposes I end up having to use google docs. Though
 I do not support google much, I'd rather use that than trust my school's samba server when the head IT
-has no idea what samba means...+They, or better yet(what is considered) the_"independent"_ school district
+has no idea what samba means...+They, or better yet(what is considered) the _"independent"_ school district
 has a serious SQL injection problem.
 
 ### Back to documentation.
