@@ -73,3 +73,35 @@ For example, lets say we have some thingy that has to variables, position x on t
 4. If the situation you're naming in has the grid as a virtual one, and the postions are used for something where the names would be different, (exa. north-south and east-west) unless you're closed source, you'd be best with either documenting them with the names, or actually naming them as what they'll be used for.
 
 If you're reading this, I haven't finished this chapter.
+
+Chapter 3 - Style
+-----------------
+This is what this entire book was supposed to be about. Coding style. Spacing, mark positioning, comment locations, endentation, etc.
+Every coder should have their own coding style, though most of the ones who are working with a team or
+for a company, know you have to stick to their coding style. If you're developing your own project, or at
+least can use your own style, this chapter is for you.
+
+### Minimalism
+My style of coding is like this:
+```
+#include <iostream>
+using namespace std;
+
+int main(int argc, char * argv[]) {
+  cout << "You suck!" << endl;
+  return 0;
+}
+```
+Some of it is just because of how vim automatically spaces things, other parts is the style of code
+I saw when I learned it. Another style of code could be soemthing like:
+```
+#include <iostream>
+using namespace std;
+
+int main () ( int argc, char * argv[] )
+{
+  cout << "You suck!\n";
+  return (0);
+}
+```
+Notice the difference?
