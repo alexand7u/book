@@ -6,8 +6,8 @@ So, this is a stupidly written, dumb, __unedited__, and fairly lazy book on how 
 Anyways...This book is written in [markdown](http://daringfireball.net/projects/markdown/). And well, even though I'm not too familiar I like it's minimalism.
 So...This book won't really have much structer too it, I'm just going on a post by post style, or however it ends up...
 
-Chapter 1 - Stuff
------------------
+Chapter 1 - Documentation
+-------------------------
 So I'm L8D. I don't have much to say for myself when it comes to a degrees, major projects, or _internetz_
 popularity, but I'm writing this anyway for bothexperience, and to share my hopefully helpful knowledge.
 I usually work with c++, python, javascript, some java, and brainfuck(and delvs\[del-vis\], my
@@ -49,6 +49,8 @@ class pointer {
 }
 ```
 
+If you're reading this, I haven't finished this chapter.
+
 Chapter 2 - Organization
 ------------------------
 I'm not entirely sure where I'm going with this, but I'll just start with some pointers on code organization.
@@ -67,3 +69,7 @@ For example, lets say we have some thingy that has to variables, position x on t
 
 1. If we have x's and y's for multiple objects, use classes, then we decide on 2.
 2. Minimalism (only with good documentation) will be `x` and `y` as the var names, though simplicity would be `posx` and `posy`
+3. If we are using them as parameters in functions, for readability, you'd want to use `posx` and `posy`, or something of that nature.
+4. If the situation you're naming in has the grid as a virtual one, and the postions are used for something where the names would be different, (exa. north-south and east-west) unless you're closed source, you'd be best with either documenting them with the names, or actually naming them as what they'll be used for.
+
+If you're reading this, I haven't finished this chapter.
