@@ -54,13 +54,13 @@ If you're reading this, I haven't finished this chapter.
 Chapter 2 - Organization
 ------------------------
 I'm not entirely sure where I'm going with this, but I'll just start with some pointers on code organization.
-By _organize your code_, I mean where you structer positions of sections of your code. This could be the order
+By _organize your code_, I mean where you structure positions of sections of your code. This could be the order
 you add stuff to your classes, where you define a bunch of const's, or when you use global variables over
 class function return values. If you're a static programmer(HTML and javascript) then this wouldn't be of much
 importance, though it would effect your css files.
 
 - Keep your stuff that goes together, together! This isn't just advice, this is logic!
-- Be consistant with how you apply something. If you use half return values, and half global variables, you're going to have a confusing time.
+- Be consistent with how you apply something. If you use half return values, and half global variables, you're going to have a confusing time.
 - If you reuse the same naming scheme on something (exa. goblinHealth, goblinDamage, goblinTrolololol) you should try to use classes. (exa. goblin.health() goblin.Damage())
 - Header files are not evil, if you reuse sections of code multiple times, just use headers. They also allow for others to add their own sets of code.
 
@@ -70,13 +70,13 @@ For example, lets say we have some thingy that has to variables, position x on t
 1. If we have x's and y's for multiple objects, use classes, then we decide on 2.
 2. Minimalism (only with good documentation) will be `x` and `y` as the var names, though simplicity would be `posx` and `posy`
 3. If we are using them as parameters in functions, for readability, you'd want to use `posx` and `posy`, or something of that nature.
-4. If the situation you're naming in has the grid as a virtual one, and the postions are used for something where the names would be different, (exa. north-south and east-west) unless you're closed source, you'd be best with either documenting them with the names, or actually naming them as what they'll be used for.
+4. If the situation you're naming in has the grid as a virtual one, and the positions are used for something where the names would be different, (exa. north-south and east-west) unless you're closed source, you'd be best with either documenting them with the names, or actually naming them as what they'll be used for.
 
 If you're reading this, I haven't finished this chapter.
 
 Chapter 3 - Style
 -----------------
-This is what this entire book was supposed to be about. Coding style. Spacing, mark positioning, comment locations, endentation, etc.
+This is what this entire book was supposed to be about. Coding style. Spacing, mark positioning, comment locations, indentation, etc.
 Every coder should have their own coding style, though most of the ones who are working with a team or
 for a company, know you have to stick to their coding style. If you're developing your own project, or at
 least can use your own style, this chapter is for you.
@@ -93,15 +93,17 @@ int main(int argc, char * argv[]) {
 }
 ```
 Some of it is just because of how vim automatically spaces things, other parts is the style of code
-I saw when I learned it. Another style of code could be soemthing like:
+I saw when I learned it. Another style of code could be something like:
 ```
 #include <iostream>
 using namespace std;
 
-int main () ( int argc, char * argv[] )
+int main ( int argc, char * argv[] )
 {
   cout << "You suck!\n";
   return (0);
 }
 ```
 Notice the difference?
+I aim to keep the parts of code that need to be seen obvious, and I minimize the others. Using a few shortcuts to keep it looking minimal.
+I do keep the '}' as a separate line with equal indentation
