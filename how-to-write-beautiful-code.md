@@ -1,4 +1,4 @@
-How to write beutiful code
+How to write beautiful code
 ==========================
 
 So, this is a stupidly written, dumb, __unedited__, and fairly lazy book on how to make your code look awesome and be readable by other people!
