@@ -110,7 +110,7 @@ I do keep the `}` as a separate line with equal indentation to it's origin so th
 example I gave, I kept the `{` on the origin line because it was unnecessary. Also, I prefer to use `endl` over a `\n` because doesn't
 obscure it's surrounding text, and if you're printing multiple lines, it works as a good separator. I could've done something like:
 `cout<<"You suck!"<<endl;`
-But how readable is that? Especially with fonts that make `<`'s and `>`'s look like crap.
+But how readable is that? Especially with fonts that make `<` and `>` look like crap.
 
 ### Commenting
 This is how I would document my code:
@@ -137,6 +137,7 @@ Simple enough, the code itself is readable enough to not many comments, though s
 ```
 // Convert the 0-2 values of port's status to readable words
 string checkStatus(int bay, char n) {
+
   int lvlnum =  bays[bay].lvl(n);
 
   switch(lvlnum) {
@@ -156,6 +157,7 @@ string checkStatus(int bay, char n) {
     // If it's 3 or above, return 'Unknown'.
     default:
       return "Unknown";
+  }
 }
 ```
-
+Doesn't that just look elegant? The whole naming thing I'm not too sure about, I just created those for examples...
