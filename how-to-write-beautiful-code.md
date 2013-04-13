@@ -133,7 +133,7 @@ string checkStatus(int bay, char n) {
       return "Unknown";
 }
 ```
-Simple enough, the code itself is readable enough to not many comments, though spacing can go a long way:
+Simple enough, the code itself is readable enough to not have many comments, though spacing can go a long way:
 ```
 // Convert the 0-2 values of port's status to readable words
 string checkStatus(int bay, char n) {
@@ -161,3 +161,9 @@ string checkStatus(int bay, char n) {
 }
 ```
 Doesn't that just look elegant? The whole naming thing I'm not too sure about, I just created those for examples...
+
+### Rules
+
+1. ALWAYS BE CONSISTANT WITH YOUR CODING STYLE. But, part of your coding style could be _dynamic_ and be different depending on different things.
+2. If you want to have self-documenting code, then try to write it that way. Not just how you do something, but spacing and style can also deeply effect the human-readability of code.
+3. Never be redundant with variable names. Try to be at least simple, but keep it understandable. If you want to be minimal, make sure it's obvious and well-documented.
