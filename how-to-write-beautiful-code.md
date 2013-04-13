@@ -164,6 +164,6 @@ Doesn't that just look elegant? The whole naming thing I'm not too sure about, I
 
 ### Rules
 
-1. ALWAYS BE CONSISTANT WITH YOUR CODING STYLE. But, part of your coding style could be _dynamic_ and be different depending on different things.
+1. __ALWAYS BE CONSISTANT WITH YOUR CODING STYLE__. But, part of your coding style could be _dynamic_ and be different depending on different things.
 2. If you want to have self-documenting code, then try to write it that way. Not just how you do something, but spacing and style can also deeply effect the human-readability of code.
 3. Never be redundant with variable names. Try to be at least simple, but keep it understandable. If you want to be minimal, make sure it's obvious and well-documented.
