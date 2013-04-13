@@ -6,8 +6,8 @@ So, this is a stupidly written, dumb, __unedited__, and fairly lazy book on how 
 Anyways...This book is written in [markdown](http://daringfireball.net/projects/markdown/). And well, even though I'm not too familiar I like it's minimalism.
 So...This book won't really have much structer too it, I'm just going on a post by post style, or however it ends up...
 
-Chapter 1 - Me
------
+Chapter 1 - Stuff
+-----------------
 So I'm L8D. I don't have much to say for myself when it comes to a degrees, major projects, or _internetz_
 popularity, but I'm writing this anyway for bothexperience, and to share my hopefully helpful knowledge.
 I usually work with c++, python, javascript, some java, and brainfuck(and delvs\[del-vis\], my
@@ -49,4 +49,21 @@ class pointer {
 }
 ```
 
-If you're reading this then I forgot to update this.
+Chapter 2 - Organization
+------------------------
+I'm not entirely sure where I'm going with this, but I'll just start with some pointers on code organization.
+By _organize your code_, I mean where you structer positions of sections of your code. This could be the order
+you add stuff to your classes, where you define a bunch of const's, or when you use global variables over
+class function return values. If you're a static programmer(HTML and javascript) then this wouldn't be of much
+importance, though it would effect your css files.
+
+- Keep your stuff that goes together, together! This isn't just advice, this is logic!
+- Be consistant with how you apply something. If you use half return values, and half global variables, you're going to have a confusing time.
+- If you reuse the same naming scheme on something (exa. goblinHealth, goblinDamage, goblinTrolololol) you should try to use classes. (exa. goblin.health() goblin.Damage())
+- Header files are not evil, if you reuse sections of code multiple times, just use headers. They also allow for others to add their own sets of code.
+
+### Naming
+For example, lets say we have some thingy that has to variables, position x on the grid, and position y on the grid. We have a few options:
+
+1. If we have x's and y's for multiple objects, use classes, then we decide on 2.
+2. Minimalism (only with good documentation) will be `x` and `y` as the var names, though simplicity would be `posx` and `posy`
