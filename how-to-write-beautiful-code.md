@@ -105,9 +105,57 @@ int main ( int argc, char * argv[] )
 }
 ```
 Notice the difference?
-I aim to keep the parts of code that need to be seen obvious, and I minimize the others. Using a few shortcuts to keep it looking minimal.
+I aim to keep the parts of code that need to be seen obvious, and I minimize the others. Using a few shortcuts like the `return 0;` to keep it looking minimal.
 I do keep the `}` as a separate line with equal indentation to it's origin so the origin can be found, though as opposed to the second
 example I gave, I kept the `{` on the origin line because it was unnecessary. Also, I prefer to use `endl` over a `\n` because doesn't
 obscure it's surrounding text, and if you're printing multiple lines, it works as a good separator. I could've done something like:
 `cout<<"You suck!"<<endl;`
 But how readable is that? Especially with fonts that make `<`'s and `>`'s look like crap.
+
+### Commenting
+This is how I would document my code:
+```
+// Convert the 0-2 values of port's status to readable words
+string checkStatus(int bay, char n) {
+  int lvlnum =  bays[bay].lvl(n);
+  switch(lvlnum) {
+    case '0':
+      return "Off";
+      break;
+    case '1':
+      return "Charging";
+      break;
+    case '2':
+      return "Active";
+      break;
+    // If it's 3 or above, return 'Unknown'.
+    default:
+      return "Unknown";
+}
+```
+Simple enough, the code itself is readable enough to not many comments, though spacing can go a long way:
+```
+// Convert the 0-2 values of port's status to readable words
+string checkStatus(int bay, char n) {
+  int lvlnum =  bays[bay].lvl(n);
+
+  switch(lvlnum) {
+
+    case '0':
+      return "Off";
+      break;
+
+    case '1':
+      return "Charging";
+      break;
+
+    case '2':
+      return "Active";
+      break;
+
+    // If it's 3 or above, return 'Unknown'.
+    default:
+      return "Unknown";
+}
+```
+
