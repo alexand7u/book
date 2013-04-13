@@ -13,7 +13,7 @@ popularity, but I'm writing this anyway for bothexperience, and to share my hope
 I usually work with c++, python, javascript, some java, and brainfuck(and delvs\[del-vis\], my
 own derivative of brainfuck). I and a few other coders consider me a minimalistic one. I like
 to keep my code clean, simple, and almost all of my coding design has been inspired in some way by the
-[suckless](www.suckless.org/philosophy)philosophy.
+[suckless](www.suckless.org/philosophy) philosophy.
 
 I use vim, I am an avide vim user, and I use markdown + raw text file to make the majority of my rich
 text documents. Though, for public school computer purposes I end up having to use google docs. Though
