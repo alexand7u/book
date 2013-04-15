@@ -48,6 +48,55 @@ class pointer {
   }
 }
 ```
+This is how I would document my code:
+```
+// Convert the 0-2 values of port's status to readable words
+string checkStatus(int bay, char n) {
+  int lvlnum =  bays[bay].lvl(n);
+  switch(lvlnum) {
+    case '0':
+      return "Off";
+      break;
+    case '1':
+      return "Charging";
+      break;
+    case '2':
+      return "Active";
+      break;
+    // If it's 3 or above, return 'Unknown'.
+    default:
+      return "Unknown";
+}
+```
+Simple enough, the code itself is readable enough to not have many comments, though spacing can go a long way:
+```
+// Convert the 0-2 values of port's status to readable words
+string checkStatus(int bay, char n) {
+
+  int lvlnum =  bays[bay].lvl(n);
+
+  switch(lvlnum) {
+
+    case '0':
+      return "Off";
+      break;
+
+    case '1':
+      return "Charging";
+      break;
+
+    case '2':
+      return "Active";
+      break;
+
+    // If it's 3 or above, return 'Unknown'.
+    default:
+      return "Unknown";
+  }
+}
+```
+Doesn't that just look elegant? The whole naming thing I'm not too sure about, I just created those for examples...
+
 
 If you're reading this, I haven't finished this chapter.
 
@@ -111,56 +160,6 @@ example I gave, I kept the `{` on the origin line because it was unnecessary. Al
 obscure it's surrounding text, and if you're printing multiple lines, it works as a good separator. I could've done something like:
 `cout<<"You suck!"<<endl;`
 But how readable is that? Especially with fonts that make `<` and `>` look like crap.
-
-### Commenting
-This is how I would document my code:
-```
-// Convert the 0-2 values of port's status to readable words
-string checkStatus(int bay, char n) {
-  int lvlnum =  bays[bay].lvl(n);
-  switch(lvlnum) {
-    case '0':
-      return "Off";
-      break;
-    case '1':
-      return "Charging";
-      break;
-    case '2':
-      return "Active";
-      break;
-    // If it's 3 or above, return 'Unknown'.
-    default:
-      return "Unknown";
-}
-```
-Simple enough, the code itself is readable enough to not have many comments, though spacing can go a long way:
-```
-// Convert the 0-2 values of port's status to readable words
-string checkStatus(int bay, char n) {
-
-  int lvlnum =  bays[bay].lvl(n);
-
-  switch(lvlnum) {
-
-    case '0':
-      return "Off";
-      break;
-
-    case '1':
-      return "Charging";
-      break;
-
-    case '2':
-      return "Active";
-      break;
-
-    // If it's 3 or above, return 'Unknown'.
-    default:
-      return "Unknown";
-  }
-}
-```
-Doesn't that just look elegant? The whole naming thing I'm not too sure about, I just created those for examples...
 
 ### Rules
 
