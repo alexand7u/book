@@ -142,7 +142,7 @@ int main(int argc, char * argv[]) {
 }
 ```
 Some of it is just because of how vim automatically spaces things, other parts is the style of code
-I saw when I learned it. Another style of code could be something like:
+is what I saw when I learned it. Another style of code could be something like:
 ```
 #include <iostream>
 using namespace std;
