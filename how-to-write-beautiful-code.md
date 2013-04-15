@@ -166,3 +166,26 @@ But how readable is that? Especially with fonts that make `<` and `>` look like 
 1. __ALWAYS BE CONSISTANT WITH YOUR CODING STYLE__. But, part of your coding style could be _dynamic_ and be different depending on different things.
 2. If you want to have self-documenting code, then try to write it that way. Not just how you do something, but spacing and style can also deeply effect the human-readability of code.
 3. Never be redundant with variable names. Try to be at least simple, but keep it understandable. If you want to be minimal, make sure it's obvious and well-documented.
+
+Chapter 4 - I don't know yet
+----------------------------
+This chapter is for my sister who is a css+html web dev, she wanted me to explain universal syntax and syntax shortcuts for stuff in many languages.
+
+So. I'm going to start with javascript, since that is by far the most common embedded and web programming language.
+Here is a sample peice of javascript, really standard:
+```
+document.write("<p>Blah</p>");
+```
+And now I'll break it down, and this is applicatable to many languages.
+
+Whenever you see a word/name with `()` following it (exa. `write("asdf")`) it means it is a function, and what goes inside the '()'s are the arguements for the function.
+`function(arguements)`
+Whenever you see a '.' in between two names(of variables, not to be mistaken for string joining) it means it is inside a class. So `document.write()` is using the 'write'
+function from the 'document' class.
+`class.something`
+And last, you have the semicolon, which in most languages means it's the end of the intruction. In actuality though, in javascript `document.write();` is actually using
+document as a file name, and it's uses the file method(which is a function applicable to a certain variable type) 'write' to append that to the html page. But you don't
+nessicarily have to know that because that is the only instance where you'd practically write to mem files.
+
+As an explanation to earlier where I talked about using `return 0;` over `return(0);`, because return is both a function and an instruction itself, so it allows spaced arguements.
+Whereas also there is a `return0;` instruction only in modern compilers. For the pupose of quickly exiting.
