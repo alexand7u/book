@@ -36,65 +36,64 @@ In my opinion, the best approach to code documentation includes notes on:
 
 Example for a function to add a new var to an array in C++:
 
-```
-// Main pointer class -- pointer.c is current pointer, and pointer.p[*] are the pointers in it's array
-class pointer {
-  int p[0] = 0;
-  int c = 0;
+    // Main pointer class -- pointer.c is current pointer, and pointer.p[*] are the pointers in it's array
+    class pointer {
+      int p[0] = 0;
+      int c = 0;
 
-  // Simply appends a new int to pointer.p
-  void addNewPointer() {
-    pointer.p.append(0);
-  }
-}
-```
+      // Simply appends a new int to pointer.p
+      void addNewPointer() {
+        pointer.p.append(0);
+      }
+    }
+
 This is how I would document my code:
-```
-// Convert the 0-2 values of port's status to readable words
-string checkStatus(int bay, char n) {
-  int lvlnum =  bays[bay].lvl(n);
-  switch(lvlnum) {
-    case '0':
-      return "Off";
-      break;
-    case '1':
-      return "Charging";
-      break;
-    case '2':
-      return "Active";
-      break;
-    // If it's 3 or above, return 'Unknown'.
-    default:
-      return "Unknown";
-}
-```
+
+    // Convert the 0-2 values of port's status to readable words
+    string checkStatus(int bay, char n) {
+      int lvlnum =  bays[bay].lvl(n);
+      switch(lvlnum) {
+        case '0':
+          return "Off";
+          break;
+        case '1':
+          return "Charging";
+          break;
+        case '2':
+          return "Active";
+          break;
+        // If it's 3 or above, return 'Unknown'.
+        default:
+          return "Unknown";
+    }
+
 Simple enough, the code itself is readable enough to not have many comments, though spacing can go a long way:
-```
-// Convert the 0-2 values of port's status to readable words
-string checkStatus(int bay, char n) {
 
-  int lvlnum =  bays[bay].lvl(n);
+    // Convert the 0-2 values of port's status to readable words
+    string checkStatus(int bay, char n) {
 
-  switch(lvlnum) {
+      int lvlnum =  bays[bay].lvl(n);
 
-    case '0':
-      return "Off";
-      break;
+      switch(lvlnum) {
 
-    case '1':
-      return "Charging";
-      break;
+        case '0':
+          return "Off";
+          break;
 
-    case '2':
-      return "Active";
-      break;
+        case '1':
+          return "Charging";
+          break;
 
-    // If it's 3 or above, return 'Unknown'.
-    default:
-      return "Unknown";
-  }
-}
-```
+        case '2':
+          return "Active";
+          break;
+
+        // If it's 3 or above, return 'Unknown'.
+        default:
+          return "Unknown";
+      }
+    }
+
 Doesn't that just look elegant? The whole naming thing I'm not too sure about, I just created those for examples...
 
 
@@ -132,27 +131,27 @@ least can use your own style, this chapter is for you.
 
 ### Minimalism
 My style of coding is like this:
-```
-#include <iostream>
-using namespace std;
 
-int main(int argc, char * argv[]) {
-  cout << "You suck!" << endl;
-  return 0;
-}
-```
+    #include <iostream>
+    using namespace std;
+
+    int main(int argc, char * argv[]) {
+      cout << "You suck!" << endl;
+      return 0;
+    }
+
 Some of it is just because of how vim automatically spaces things, other parts is the style of code
 is what I saw when I learned it. Another style of code could be something like:
-```
-#include <iostream>
-using namespace std;
 
-int main ( int argc, char * argv[] )
-{
-  cout << "You suck!\n";
-  return (0);
-}
-```
+    #include <iostream>
+      using namespace std;
+
+    int main ( int argc, char * argv[] )
+    {
+      cout << "You suck!\n";
+      return (0);
+    }
+
 Notice the difference?
 I aim to keep the parts of code that need to be seen obvious, and I minimize the others. Using a few shortcuts like the `return 0;` to keep it looking minimal.
 I do keep the `}` as a separate line with equal indentation to it's origin so the origin can be found, though as opposed to the second
@@ -173,9 +172,9 @@ This chapter is for my sister who is a css+html web dev, she wanted me to explai
 
 So. I'm going to start with javascript, since that is by far the most common embedded and web programming language.
 Here is a sample peice of javascript, really standard:
-```
-document.write("<p>Blah</p>");
-```
+
+`document.write("<p>Blah</p>");`
+
 And now I'll break it down, and this is applicatable to many languages.
 
 Whenever you see a word/name with `()` following it (exa. `write("asdf")`) it means it is a function, and what goes inside the '()'s are the arguements for the function.
